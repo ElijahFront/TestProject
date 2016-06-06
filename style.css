@@ -29,11 +29,7 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.top-info:after{
-  clear: both;
-  content: '';
-  display: table;
+  align-items: center;
 }
 .user{
   height: 60px;
@@ -67,11 +63,9 @@ header{
 
 }
 .social{
-  float: right;
+
   width: 160px;
-  position: absolute;
-  right: 40px;
-  top: 35px;
+
 }
 .social-btn{
   width: 34px;

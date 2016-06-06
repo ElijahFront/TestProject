@@ -26,6 +26,9 @@ header{
   background-color: rgb(140, 195, 75);
   padding: 15px 30px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .top-info:after{
   clear: both;

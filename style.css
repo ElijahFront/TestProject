@@ -35,22 +35,17 @@ header{
   height: 60px;
   width: 350px;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .logo-pict{
   height: 100%;
   width: 60px;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-
   margin-right: 18px;
 }
 .user-info{
-  position: absolute;
-  top: 0;
-  left: 80px;
-  padding-top: 11px;
   line-height: 14px;
 }
 .logo-pict img{

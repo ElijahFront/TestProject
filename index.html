@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   <title>Document</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
+  <div class="page-wrapper">
+
   <header class="top-info">
     <div class="user">
       <div class="logo-pict">
@@ -31,7 +32,7 @@
         <div class="info about-me">
           <div class="text-info">
             <h4>Немного обо мне</h4>
-            <p>Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образов Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, amet!</p>
+            <p>Я живу в Екатеринбурге (Россия). Мне 16 лет. В следующем году сдаю ЕГЭ, пданирую поступать в ВШЭ. Занимаюсь спортом, КМС по горным лыжам, люблю ездить на кроссовом мотоцикле.</p>
           </div>
 
           <div class="picture"></div>
@@ -39,7 +40,7 @@
         <div class="info experience">
           <div class="text-info">
             <h4>Мой опыт в разработке</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero non illo repellendus suscipit nostrum, voluptatum tempore, facilis!</p>
+            <p>Увлекся вебом около года назад, проходидил курсы HTML Academy, а также курс на OpenEdu. До настоящего момента занимался версткой с простыми манипуляция DOM посредством js.</p>
           </div>
 
           <div class="picture"></div>
@@ -56,76 +57,124 @@
         <span style="display:block;">которые мне помогут в выполнении этого задания</span>
       </div>
 
+
       <div class="passed-wrapper">
 
-        <div class="passed js">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Основы JavaScript</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nulla?</p>
-            <span>24 урока (6 часов 46 минут)</span>
+          <div class="passed js">
+            
+            <div class="mask">
+              <div class="img"></div>
+              <div class="text">
+                <h3>Основы JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nulla?</p>
+                <span>24 урока (6 часов 46 минут)</span>
+              </div>
+
+            <div class="block-wrapper">
+            <label><input type="checkbox" id="js"/>Посмотрел</label>
+            </div>
           </div>
-          <input type="checkbox" id="js" checked="her">
         </div>
 
 
+
         <div class="passed jquery">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Основы JQuery</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, beatae facere.</p>
-            <span>11 уроков (2 часа 40 минут)</span>
+          <div class="mask">
+            <div class="img"></div>
+            <div class="text">
+              <h3>Основы JQuery</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, beatae facere.</p>
+              <span>11 уроков (2 часа 40 минут)</span>
+            </div>
+
+          <div class="block-wrapper">
+          <label><input type="checkbox" id="jquery"/>Посмотрел</label>
           </div>
-          <input type="checkbox" id="jquery">
+          </div>
+
         </div>
 
 
         <div class="passed basic">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Базовые элементы страницы</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis, unde?</p>
-            <span>9 уроков (2 часа 40 минут)</span>
+          <div class="mask">
+
+            <div class="img"></div>
+            <div class="text">
+              <h3>Базовые элементы страницы</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis, unde?</p>
+              <span>9 уроков (2 часа 40 минут)</span>
+            </div>
+
+            <div class="block-wrapper">
+
+          <input type="checkbox" id="basic"><label for="basic">Посмотрел</label>
           </div>
-          <input type="checkbox" id="basic">
+          </div>
         </div>
 
 
         <div class="passed responsive">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Создание адаптивных сайтов</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, minus!</p>
-            <span>7 уроков (2 часа 11 минут)</span>
+          <div class="mask">
+
+
+            <div class="img"></div>
+            <div class="text">
+              <h3>Создание адаптивных сайтов</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, minus!</p>
+              <span>7 уроков (2 часа 11 минут)</span>
+            </div>
+
+          <div class="block-wrapper">
+          <input type="checkbox" id="resp"><label for="resp">Посмотрел</label>
           </div>
-          <input type="checkbox" id="resp">
+          </div>
         </div>
 
 
         <div class="passed resp-css">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Верстка адаптивной CSS галереи</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis ratione animi magni.</p>
-            <span>6 уроков (1 час 6 минут)</span>
+          <div class="mask">
+
+            <div class="img"></div>
+            <div class="text">
+              <h3>Верстка адаптивной CSS галереи</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis ratione animi magni.</p>
+              <span>6 уроков (1 час 6 минут)</span>
+            </div>
+
+          <div class="block-wrapper">
+          <input type="checkbox" id="resp-css"><label for="resp-css">Посмотрел</label>
           </div>
-          <input type="checkbox" id="resp-css">
+          </div>
         </div>
 
 
         <div class="passed adaptive-css">
-          <div class="img"></div>
-          <div class="text">
-            <h3>Верстка адаптивной CSS галереи</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maiores, nesciunt.</p>
-            <span>4 урока (50 минут)</span>
+          <div class="mask">
+
+
+            <div class="img"></div>
+            <div class="text">
+              <h3>Верстка адаптивной CSS галереи</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maiores, nesciunt. Lorem ipsusimilique quasi?</p>
+              <span>4 урока (50 минут)</span>
+            </div>
+
+          <div class="block-wrapper">
+          <input type="checkbox" id="adapt-css"><label for="adapt-css">Посмотрел</label>
           </div>
-          <input type="checkbox" id="adapt-css">
+        </div>
+      </div>
+        <div id="all-over">
+          <span>Задание выполнено!</span></br>
+          <span class="please">P.S. Не судите строго, у меня было полтора дня)</span>
         </div>
       </div>
 
     </div>
   </section>
+</div>
+
+<div class="footer-wrapper">
 
   <footer>
     <div class="positioner">
@@ -134,7 +183,7 @@
       </p>
     </div>
   </footer>
-
+</div>
   <script src="scr.js"></script>
 </body>
 </html>

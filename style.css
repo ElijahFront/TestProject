@@ -18,6 +18,18 @@ body{
   margin: 0;
   font-family: FiraSans;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -72px;
+}
+* html .page-wrapper {
+    height: 100%;
+}
 header{
   color: white;
 }
@@ -26,22 +38,39 @@ header{
   background-color: rgb(140, 195, 75);
   padding: 15px 30px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .user{
   height: 60px;
   width: 350px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .logo-pict{
   height: 100%;
   width: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
 
   margin-right: 18px;
 }
@@ -51,7 +80,7 @@ header{
 .logo-pict img{
   width: 100%;
   height: 100%;
-
+border-radius: 50%;
 }
 .user h3{
   margin-top: 9px;
@@ -85,7 +114,7 @@ header{
 }
 .student .wrapper>span{
   font-size: 22px;
-  color: rgb(207, 207, 207);
+  color: #727272;
 }
 .student .wrapper{
   padding-top: 70px;
@@ -111,6 +140,24 @@ header{
 .info .text-info{
   position: absolute;
   left: 160px;
+  /* Base text style */
+width: 275px;
+height: 164px;
+font-family: FiraSans;
+
+
+/* Text style for "Я живу в Санкт" */
+color: #727272;
+}
+.info .text-info p{
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 21px;
+}
+.info .text-info h4{
+  color: black;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
 .info .picture{
   position: absolute;
@@ -138,7 +185,7 @@ header{
 }
 .courses-header span{
   font-size: 22px;
-  color: rgb(207, 207, 207);
+  color: #727272;
   font-weight: normal;
 }
 .courses-header{
@@ -151,22 +198,34 @@ header{
   padding-bottom: 85px;
 }
 .passed{
-  display: inline-block;
   width: 295px;
-  margin-right: 20px;
   position: relative;
-
+  z-index: 1;
   margin-bottom: 80px;
-  background: white;
+  /* background-color: rgb(247, 246, 240); */
+  background-color: white;
+  height: auto;
+  box-shadow: 0 0 4px rgba(0,0,0, 0.6);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 .passed-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;;
 }
+/*
 .basic, .adaptive-css{
   margin-right: 0;
 }
+*/
 .passed .img{
   width: 100%;
   height: 245px;
@@ -178,6 +237,8 @@ header{
 .passed .text{
   padding-top: 25px;
   border-top: 3px solid transparent;
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
 .passed:hover .text h3{
   color:green;
@@ -186,20 +247,96 @@ header{
 .passed:hover .text{
     border-top: 3px solid green;
 }
+label, input{
+  display: inline-block;
+  color: rgb(133, 133, 133);
+}
+label{
+  margin-top:11px;
+}
 input{
-  position: absolute;
-  bottom: -20px;
+  margin-right: 19px;
+  margin-left: 20px;
+}
+.js .img{
+  background: url("icons/js.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.jquery .img{
+  background: url("icons/jquery.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.basic .img{
+  background: url("icons/basic.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.responsive .img{
+  background: url("icons/adapt.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.resp-css .img{
+  background: url("icons/resp.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.adaptive-css .img{
+  background: url("icons/gal.png") 0 0 no-repeat;
+  background-size: contain;
+}
+.passed span{
+  color: rgb(207, 207, 207);
 }
 footer{
   height: 72px;
   background-color: rgb(33, 33, 33);
   text-align: center;
   color: rgb(207, 207, 207);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: sans-serif;
   font-size: 14px;
 }
 footer .positioner{
   width: 500px;
+}
+.block-wrapper{
+  background-color: rgb(247, 246, 240);
+  z-index: 2;
+  height: 50px;
+}
+.responsive .text{
+  margin-bottom: 50px;
+}
+.mask{
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: -50px;
+}
+#all-over{
+  display: none;
+  font-size: 25px;
+  color: black;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.please{
+  font-size: 11px;
+  color: rgb(207, 207, 207);
+}
+h2{
+  color: #212121;
+font-size: 42px !important;
+font-weight: 500;
+line-height: 28px;
+}
+h4{
+  font-size: 21px;
+font-weight: 400;
+line-height: 28px;
 }
